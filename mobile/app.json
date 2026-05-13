@@ -1,4 +1,54 @@
 {
   "name": "DCCustomersMobile",
-  "displayName": "DC CUSTOMERS"
+  "displayName": "DC CUSTOMERS",
+  "version": "1.0.0",
+  "slug": "dc-customers-app",
+  "scheme": "dccustomers",
+  "platforms": [
+    "ios",
+    "android",
+    "web"
+  ],
+  "ios": {
+    "supportsTabletMode": true,
+    "bundleIdentifier": "com.pocomymobile.dccustomers"
+  },
+  "android": {
+    "adaptiveIcon": {
+      "foregroundImage": "./assets/adaptive-icon.png",
+      "backgroundColor": "#667eea"
+    },
+    "package": "com.pocomymobile.dccustomers",
+    "versionCode": 1
+  },
+  "web": {
+    "favicon": "./assets/favicon.png"
+  },
+  "plugins": [
+    [
+      "expo-image-picker",
+      {
+        "photosPermission": "অ্যাপ আপনার ফটো অ্যাক্সেস করতে চায়",
+        "cameraPermission": "অ্যাপ আপনার ক্যামেরা অ্যাক্সেস করতে চায়"
+      }
+    ],
+    [
+      "expo-contacts",
+      {
+        "contactsPermission": "অ্যাপ আপনার যোগাযোগ অ্যাক্সেস করতে চায়"
+      }
+    ]
+  ],
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.WRITE_EXTERNAL_STORAGE"
+  ],
+  "privacy": "https://example.com/privacy",
+  "userInterfaceStyle": "light",
+  "updates": {
+    "fallbackToCacheTimeout": 0
+  },
+  "orientation": "portrait",
+  "runtimeVersion": "1.0.0"
 }
